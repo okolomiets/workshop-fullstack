@@ -21,6 +21,5 @@ module.exports = {
             'mongodb://localhost/myworkshopapp'
   },
 
-  seedDB: true,
-  root: path.normalize(__dirname + '/../../..' + '/dist')
+  seedDB: true
 };
