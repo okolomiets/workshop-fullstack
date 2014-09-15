@@ -28,8 +28,8 @@ module.exports = function(app) {
   app.use(cookieParser());
   app.use(passport.initialize());
   if ('production' === env) {
-    console.log('config.root: ', config.root);
-    app.use(favicon(path.join(config.root, 'public', 'favicon.ico')));
+    console.log('favicon path: ', path.join(config.root, 'public', 'favicon.ico'));
+//    app.use(favicon(path.join(config.root, 'public', 'favicon.ico')));
     app.use(express.static(path.join(config.root, 'public')));
     app.set('appPath', config.root + '/public');
     app.use(morgan('dev'));
