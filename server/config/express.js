@@ -19,12 +19,7 @@ var passport = require('passport');
 module.exports = function(app) {
   var env = app.get('env');
 
-  if ('production' === env) {
-    app.set('views', config.root + '/dist' + '/server/views');
-  }
-  else {
-    app.set('views', config.root + '/server/views');
-  }
+  app.set('views', config.root + '/server/views');
   app.set('view engine', 'jade');
   app.use(compression());
   app.use(bodyParser.urlencoded({ extended: false }));
@@ -33,11 +28,9 @@ module.exports = function(app) {
   app.use(cookieParser());
   app.use(passport.initialize());
   if ('production' === env) {
-    console.log('== PRODUCTION ==');
-    console.log(config.root);
-    app.use(favicon(path.join(config.root, 'dist', 'public', 'favicon.ico')));
-    app.use(express.static(path.join(config.root, 'dist', 'public')));
-    app.set('appPath', config.root + '/dist' + '/public');
+    app.use(favicon(path.join(config.root, 'public', 'favicon.ico')));
+    app.use(express.static(path.join(config.root, 'public')));
+    app.set('appPath', config.root + '/public');
     app.use(morgan('dev'));
   }
 
