@@ -408,7 +408,7 @@ module.exports = function (grunt) {
       },
       heroku: {
         options: {
-          remote: 'heroku',
+          remote: 'git@heroku.com:arcane-plains-1686.git',
           branch: 'master'
         }
       },
