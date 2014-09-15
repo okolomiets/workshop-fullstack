@@ -414,7 +414,7 @@ module.exports = function (grunt) {
       },
       openshift: {
         options: {
-          remote: 'openshift',
+          remote: 'openshift url',
           branch: 'master'
         }
       }
@@ -425,12 +425,12 @@ module.exports = function (grunt) {
       server: [
         'coffee',
         'jade',
-        'stylus',
+        'stylus'
       ],
       test: [
         'coffee',
         'jade',
-        'stylus',
+        'stylus'
       ],
       debug: {
         tasks: [
@@ -606,7 +606,7 @@ module.exports = function (grunt) {
           ]
         }
       }
-    },
+    }
   });
 
   // Used for delaying livereload until after server has restarted
