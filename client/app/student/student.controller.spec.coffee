@@ -83,4 +83,4 @@ describe 'Controller: StudentCtrl', ->
     ]
 
   it 'should set the default value of orderProp model', ->
-    expect(scope.orderProp).toBe('class')
+    expect(scope.orderProp).toBe('name')
