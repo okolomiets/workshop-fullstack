@@ -1,7 +1,7 @@
 "use strict"
 
 # Services 
-mainServices = angular.module("mainServices", ["ngResource"])
+mainServices = angular.module("studentServices", ["ngResource"])
 mainServices.factory "Student", [
   "$resource"
   ($resource) ->

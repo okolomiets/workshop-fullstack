@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "imageUrl": "data/img/teachers/1.jpg",
+    "name": "Maya",
+    "class": "Language"
+  },
+  {
+    "id": "2",
+    "imageUrl": "data/img/teachers/2.jpg",
+    "name": "Olga",
+    "class": "History"
+  }
+]

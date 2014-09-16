@@ -1,6 +1,6 @@
 'use strict'
 
-describe 'Controller: MainCtrl', ->
+describe 'Controller: StudentCtrl', ->
 
   # We use a newly-defined toEqualData Jasmine matcher.
   # When the toEqualData matcher compares two objects,
@@ -13,9 +13,9 @@ describe 'Controller: MainCtrl', ->
 
   # load the controller's module
   beforeEach module 'myWorkshopAppApp' 
-  beforeEach module 'socketMock' 
+  beforeEach module 'socketMock'
 
-  MainCtrl = undefined
+  StudentCtrl = undefined
   scope = undefined
   $httpBackend = undefined
 
@@ -49,7 +49,7 @@ describe 'Controller: MainCtrl', ->
       }
     ]
     scope = $rootScope.$new()
-    MainCtrl = $controller 'MainCtrl',
+    StudentCtrl = $controller 'StudentCtrl',
       $scope: scope
 
   it 'should attach a list of students to the scope', ->

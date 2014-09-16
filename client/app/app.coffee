@@ -7,7 +7,8 @@ angular.module 'myWorkshopAppApp', [
   'ngRoute',
   'btford.socket-io',
   'ui.bootstrap',
-  'mainServices'
+  'studentServices',
+  'teacherServices'
 ]
 .config ($routeProvider, $locationProvider, $httpProvider) ->
   $routeProvider

@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module 'myWorkshopAppApp'
-  .controller 'MainCtrl', ($scope, Student) ->
+  .controller 'StudentCtrl', ($scope, Student) ->
     $scope.students = Student.query()
     $scope.orderProp = "name"
 

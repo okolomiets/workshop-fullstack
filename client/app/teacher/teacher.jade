@@ -1,0 +1,24 @@
+div(ng-include='"components/navbar/navbar.html"')
+
+div(ng-include='"components/header/header.html"')
+
+.container
+  .row
+    .col-lg-12
+      p Search:
+      input(ng-model="query")
+      p Sort by:
+      select(ng-model="orderProp")
+        option(value="name") Name
+        option(value="class") Class
+  .row
+    .col-lg-12
+      h1.page-header Teachers:
+      ul.nav.nav-tabs.nav-stacked.col-md-3.col-lg-3.col-sm-7(ng-repeat='teacher in teachers | filter:query | orderBy:orderProp')
+        li
+          a(href='teachers/{{teacher.id}}')
+            img(ng-src='{{teacher.imageUrl}}', width='200')
+            p {{teacher.name}}
+            p {{teacher.class}}
+
+div(ng-include='"components/footer/footer.html"')
