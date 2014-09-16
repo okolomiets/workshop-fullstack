@@ -6,7 +6,8 @@ angular.module 'myWorkshopAppApp', [
   'ngSanitize',
   'ngRoute',
   'btford.socket-io',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'mainServices'
 ]
 .config ($routeProvider, $locationProvider, $httpProvider) ->
   $routeProvider

@@ -1,0 +1,26 @@
+[
+  {
+    "birthday": "2004-04-02",
+    "id": "1",
+    "imageUrl": "data/img/students/1.jpg",
+    "name": "Maryna"
+  },
+  {
+    "birthday": "2004-06-12",
+    "id": "2",
+    "imageUrl": "data/img/students/2.jpg",
+    "name": "Kate"
+  },
+  {
+    "birthday": "2004-01-10",
+    "id": "3",
+    "imageUrl": "data/img/students/3.jpg",
+    "name": "Lisa"
+  },
+  {
+    "birthday": "2004-12-12",
+    "id": "4",
+    "imageUrl": "data/img/students/4.jpg",
+    "name": "Michael"
+  }
+]
